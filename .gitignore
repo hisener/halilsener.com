@@ -7,6 +7,3 @@ build-html
 
 # WebStorm folder
 .idea
-
-# Template html file
-template.html

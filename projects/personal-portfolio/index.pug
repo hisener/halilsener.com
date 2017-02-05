@@ -2,6 +2,11 @@ extends ../global.layout.pug
 
 block append head
   title Halil Ibrahim Sener
+  meta(name='description' content='My personal webpage and freeCodeCamp projects')
+  meta(name='og:title' content='Halil Ibrahim Sener')
+  meta(name='og:description' content='My personal webpage and freeCodeCamp projects')
+  meta(name='og:image' content='http://halilsener.com/img/avatar.png')
+  link(rel='shortcut icon' href='http://halilsener.com/img/avatar.png' type='image/x-icon')
 
 block content
   nav.navbar.navbar-default.navbar-fixed-top
@@ -25,7 +30,7 @@ block content
   .container
     .row
       .col-md-4
-        img.img-responsive.img-circle(src='http://i.imgur.com/O5Um45G.png')
+        img.img-responsive.img-circle(src='img/avatar.png')
       .col-md-8
         h1 Halil Ibrahim Sener
         h2 Computer Science Student
@@ -95,3 +100,6 @@ block content
   .container
     .row
       #contact
+
+block append foot
+  link(rel='stylesheet', href='style.css')
