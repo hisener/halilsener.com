@@ -9,7 +9,7 @@ gulp.task('build', function () {
 
   gulp.src(['build-html/**', '!build-html/personal-portfolio{,/**}']).pipe(gulp.dest('build'))
 
-  gulp.src(['projects/personal-portfolio/*', 'build-html/personal-portfolio/*', '!projects/personal-portfolio/*.pug'])
+  gulp.src(['projects/personal-portfolio/**', 'build-html/personal-portfolio/*', '!projects/personal-portfolio/*.pug'])
     .pipe(gulp.dest('build'))
 
   gulp.src(['CNAME'])
