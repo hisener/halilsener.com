@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/hisener/halilsener.com#readme",
   "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
     "surge": "^0.18.0"
   }
 }
