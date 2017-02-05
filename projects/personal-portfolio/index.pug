@@ -1,0 +1,97 @@
+extends ../global.layout.pug
+
+block append head
+  title Halil Ibrahim Sener
+
+block content
+  nav.navbar.navbar-default.navbar-fixed-top
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#') hisener
+      #navbar.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li.active
+            a(href='#top') About
+          li
+            a(href='#portfolio') Portfolio
+          li
+            a(href='#contact') Contact
+
+  .container
+    .row
+      .col-md-4
+        img.img-responsive.img-circle(src='http://i.imgur.com/O5Um45G.png')
+      .col-md-8
+        h1 Halil Ibrahim Sener
+        h2 Computer Science Student
+        p.description
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  #tech-stack.container
+    .row
+      .col-md-12
+        h3 Technologies I actively use
+        span.label.label-success JavaScript (ES6)
+        span.label.label-success JavaScript
+        span.label.label-success C
+        span.label.label-success Java
+        hr
+        span.label.label-success Node.js
+        span.label.label-success Express.js
+        hr
+        span.label.label-success MongoDB
+        hr
+        span.label.label-success ReactJS
+        span.label.label-success HTML5
+        span.label.label-success Bootstrap
+        span.label.label-success jQuery
+        hr
+        span.label.label-success npm
+        span.label.label-success Heroku
+        span.label.label-success Git
+        span.label.label-success GitHub
+        span.label.label-success Subversion
+        hr
+        span I have used in past
+        span.label.label-warning PHP
+        span.label.label-warning MySQL
+        span.label.label-warning CodeIgniter
+        span.label.label-warning WordPress
+
+  #portfolio.container
+    .row
+      .col-md-12
+        h3 Portfolio
+      .col-md-6.col-md-4
+        .thumbnail
+          img(src='https://placehold.it/600x400')
+          .caption
+            h4 Test Project
+            p
+              a.btn.btn-primary.btn-sm(href='#', role='button') Demo
+              a.btn.btn-default.btn-sm(href='#', role='button') Code
+      .col-md-6.col-md-4
+        .thumbnail
+          img(src='https://placehold.it/600x400')
+          .caption
+            h4 Test Project
+            p
+              a.btn.btn-primary.btn-sm(href='#', role='button') Demo
+              a.btn.btn-default.btn-sm(href='#', role='button') Code
+      .col-md-6.col-md-4
+        .thumbnail
+          img(src='https://placehold.it/600x400')
+          .caption
+            h4 Test Project
+            p
+              a.btn.btn-primary.btn-sm(href='#', role='button') Demo
+              a.btn.btn-default.btn-sm(href='#', role='button') Code
+
+  .container
+    .row
+      #contact

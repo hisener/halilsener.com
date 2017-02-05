@@ -1,0 +1,65 @@
+extends ../global.layout.pug
+
+block append head
+  title Roger Federer: Tribute Page - Halil Ibrahim Sener
+
+block content
+  .container
+    .row
+      .header
+        h1.text-center Roger Federer
+        h2.text-center
+          em The greatest tennis player of all time
+      .main
+        .thumbnail
+          img.img-responsive(src='img/federer.jpg')
+          .caption.text-center Federer at 2017 Australian Open Final
+        .well
+          h3 He is the greatest because:
+          ul
+            li 18 Grand Slam titles overall
+            li 28 Grand Slam finals overall
+            li 3 Grand Slam titles per-year 3 times 2004, 2006–07
+            li 2 Grand Slam titles per-year 5 times 2004–07, 2009
+            li Reached all 4 Grand Slam finals 3 times (2006–07, 2009)
+            li 10 consecutive Grand Slam finals
+            li 302 weeks at World No.1 of the ATP rankings
+            li 237 consecutive weeks at World No.1 of the ATP rankings
+        div
+          blockquote.twitter-video(data-lang='en')
+            p(lang='en', dir='ltr')
+              | Tears of joy for the champ
+              a(href='https://twitter.com/hashtag/Federer?src=hash') #Federer
+              a(href='https://twitter.com/hashtag/AusOpen?src=hash') #AusOpen
+              a(href='https://t.co/t048S5Spcm') pic.twitter.com/t048S5Spcm
+            | — #AusOpen (@AustralianOpen)
+            a(href='https://twitter.com/AustralianOpen/status/825680188788731909') January 29, 2017
+          script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
+        blockquote
+          p
+            | Tennis is a tough sport, there's no draws but if there was I'd be happy to share it with Rafa tonight.
+          footer After 2017 Australian Open Final
+        h3 Grand Slam tournament performance
+        table.table.table-hover.table-condensed
+          thead
+            tr
+              th Tournament
+              th Tournament Won
+          tbody
+            tr
+              td Australian Open
+              td 2004, 2006, 2007, 2010, 2017
+            tr
+              td French Open
+              td 2009
+            tr
+              td Wimbledon
+              td 2003, 2004, 2005, 2006, 2007, 2009, 2012
+            tr
+              td US Open
+              td 2004, 2005, 2006, 2007, 2008
+      footer.footer
+        span.text-muted
+          a(href='https://en.wikipedia.org/wiki/Roger_Federer', target='_blank') Roger Federer - Wikipedia
+        span
+          a.pull-right(href='https://github.com/hisener', target='_blank') hisener@github

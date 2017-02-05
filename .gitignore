@@ -1,8 +1,9 @@
 # node_modules
 node_modules
 
-# build folder
+# build folders
 build
+build-html
 
 # WebStorm folder
 .idea

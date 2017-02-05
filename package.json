@@ -4,6 +4,8 @@
   "description": "My personal webpage and projects from freeCodeCamp",
   "main": "index.js",
   "scripts": {
+    "build": "gulp build-pug && gulp build",
+    "clean": "gulp clean",
     "test": "echo \"Error: no test specified\""
   },
   "repository": {
@@ -19,6 +21,7 @@
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
+    "gulp-pug": "^3.2.0",
     "surge": "^0.18.0"
   }
 }

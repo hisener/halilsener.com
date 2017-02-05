@@ -1,4 +1,4 @@
-# halilsener.com
+# halilsener.com [![Build Status](https://travis-ci.org/hisener/halilsener.com.svg?branch=master)](https://travis-ci.org/hisener/halilsener.com)
 My personal webpage and projects from freeCodeCamp
 
 ## freeCodeCamp Projects
@@ -6,7 +6,7 @@ My personal webpage and projects from freeCodeCamp
 ### Basic Front End Development Projects
 
 - [x] [Build a Tribute Page](projects/tribute-page)
-- [ ] Personal Portfolio Webpage
+- [x] [Personal Portfolio Webpage](projects/personal-portfolio)
 
 ### Intermediate Front End Development Projects
 - [ ] Random Quote Machine
@@ -21,7 +21,7 @@ My personal webpage and projects from freeCodeCamp
 - [ ] Simon Game
 
 ### React Projects
-- [ ] Markdown Previewer
+- [x] [Markdown Previewer](https://hisener-markdown-previewer.herokuapp.com/)
 - [ ] Camper Leaderboard
 - [ ] Recipe Box
 - [ ] Game of Life
@@ -35,9 +35,9 @@ My personal webpage and projects from freeCodeCamp
 - [ ] Map Data Across the Globe
 
 ### API Projects
-- [ ] Timestamp Microservice
-- [ ] Request Header Parser Microservice
-- [ ] URL Shortener Microservice
+- [x] [Timestamp Microservice](https://hisener-timestamp-api.herokuapp.com/)
+- [x] [Request Header Parser Microservice](http://hisener-header-parser.herokuapp.com/)
+- [x] [URL Shortener Microservice](https://hisener-url-shortener.herokuapp.com/)
 - [ ] Image Search Abstraction Layer
 - [ ] File Metadata Microservice
 
@@ -52,7 +52,7 @@ My personal webpage and projects from freeCodeCamp
 - [x] Move domain after transfer
 - [x] git add CNAME
 - [x] Add Travis CI integration http://surge.sh/help/integrating-with-travis-ci
-- [ ] Create initial portfolio page
+- [x] Create initial portfolio page
 - [x] Move Tribute Page from CodePen
 - [ ] Move Random Quote Machine from CodePen
 - [ ] Move Local weather from CodePen
