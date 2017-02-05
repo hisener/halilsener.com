@@ -1,0 +1,22 @@
+{
+  "name": "halilsener.com",
+  "version": "1.0.0",
+  "description": "My personal webpage and projects from freeCodeCamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisener/halilsener.com.git"
+  },
+  "author": "Halil Ibrahim Sener <hisener@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hisener/halilsener.com/issues"
+  },
+  "homepage": "https://github.com/hisener/halilsener.com#readme",
+  "devDependencies": {
+    "surge": "^0.18.0"
+  }
+}
