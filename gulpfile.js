@@ -6,6 +6,8 @@ gulp.task('build', ['clean'], function () {
     .pipe(gulp.dest('build'))
   gulp.src(['projects/personal-portfolio/*'])
     .pipe(gulp.dest('build'))
+  gulp.src(['CNAME'])
+    .pipe(gulp.dest('build'))
 })
 
 gulp.task('clean', function () {
