@@ -6,7 +6,6 @@ block append head
   meta(name='og:title' content='Halil Ibrahim Sener')
   meta(name='og:description' content='My personal webpage and freeCodeCamp projects')
   meta(name='og:image' content='http://halilsener.com/img/avatar.png')
-  link(rel='shortcut icon' href='http://halilsener.com/img/avatar.png' type='image/x-icon')
 
 block content
   nav.navbar.navbar-default.navbar-fixed-top
@@ -20,7 +19,8 @@ block content
         a.navbar-brand(href='#') hisener
       #navbar.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
-          li.active
+          //- li.active
+          li
             a(href='#top') About
           li
             a(href='#portfolio') Portfolio
@@ -33,9 +33,13 @@ block content
         img.img-responsive.img-circle(src='img/avatar.png')
       .col-md-8
         h1 Halil Ibrahim Sener
-        h2 Computer Science Student
-        p.description
-          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        h2 CS Student, Seeking Internship
+        div.description
+          ul
+            li Computer Science Student @ Hacettepe (Ankara, Turkey)
+            li Part-time Software Engineer @ MilSOFT Software Tech. (Ankara, Turkey)
+            li Camper @ freeCodeCamp
+            li Seeking Internship for Summer 2017
 
   #tech-stack.container
     .row
@@ -62,7 +66,7 @@ block content
         span.label.label-success GitHub
         span.label.label-success Subversion
         hr
-        span I have used in past
+        span I have used in past&nbsp;
         span.label.label-warning PHP
         span.label.label-warning MySQL
         span.label.label-warning CodeIgniter
@@ -74,32 +78,60 @@ block content
         h3 Portfolio
       .col-md-6.col-md-4
         .thumbnail
-          img(src='https://placehold.it/600x400')
+          img(src='img/ws-chat-example.png')
           .caption
-            h4 Test Project
+            h4 WebSockets Chat Example
             p
-              a.btn.btn-primary.btn-sm(href='#', role='button') Demo
-              a.btn.btn-default.btn-sm(href='#', role='button') Code
+              a.btn.btn-primary.btn-sm(href='https://ws-chat-example.herokuapp.com/' target='_blank' role='button') Demo
+              a.btn.btn-default.btn-sm(href='https://github.com/hisener/ws-chat-example' target='_blank' role='button') Code
       .col-md-6.col-md-4
         .thumbnail
-          img(src='https://placehold.it/600x400')
+          img(src='img/markdown-previewer.png')
           .caption
-            h4 Test Project
+            h4 Markdown Previewer
             p
-              a.btn.btn-primary.btn-sm(href='#', role='button') Demo
-              a.btn.btn-default.btn-sm(href='#', role='button') Code
+              a.btn.btn-primary.btn-sm(href='https://hisener-markdown-previewer.herokuapp.com/' target='_blank' role='button') Demo
+              a.btn.btn-default.btn-sm(href='https://github.com/hisener/markdown-previewer' target='_blank' role='button') Code
       .col-md-6.col-md-4
         .thumbnail
-          img(src='https://placehold.it/600x400')
+          img(src='img/url-shortener.png')
           .caption
-            h4 Test Project
+            h4 Url Shortener Microservice
             p
-              a.btn.btn-primary.btn-sm(href='#', role='button') Demo
-              a.btn.btn-default.btn-sm(href='#', role='button') Code
+              a.btn.btn-primary.btn-sm(href='https://hisener-url-shortener.herokuapp.com/' target='_blank' role='button') Demo
+              a.btn.btn-default.btn-sm(href='https://github.com/hisener/url-shortener' target='_blank' role='button') Code
+      .col-md-6.col-md-4
+        .thumbnail
+          img(src='img/header-parser.png')
+          .caption
+            h4 Header Parser Microservice
+            p
+              a.btn.btn-primary.btn-sm(href='http://hisener-header-parser.herokuapp.com/' target='_blank' role='button') Demo
+              a.btn.btn-default.btn-sm(href='https://github.com/hisener/header-parser' target='_blank' role='button') Code
+      .col-md-6.col-md-4
+        .thumbnail
+          img(src='img/timestamp-api.png')
+          .caption
+            h4 Timestamp Microservice
+            p
+              a.btn.btn-primary.btn-sm(href='https://hisener-timestamp-api.herokuapp.com/' target='_blank' role='button') Demo
+              a.btn.btn-default.btn-sm(href='https://github.com/hisener/timestamp-api' target='_blank' role='button') Code
 
-  .container
-    .row
-      #contact
+  footer#contact
+    .container
+      h3 Contact
+      a.btn.btn-default(href='https://github.com/hisener' target='_blank' role='button' data-toggle='tooltip' title='GitHub')
+        i.fa.fa-github
+      a.btn.btn-default(href='https://www.freecodecamp.com/hisener' target='_blank' role='button' data-toggle='tooltip' title='freeCodeCamp')
+        i.fa.fa-free-code-camp
+      a.btn.btn-default(href='https://www.linkedin.com/in/hisener' target='_blank' role='button' data-toggle='tooltip' title='LinkedIn')
+        i.fa.fa-linkedin
+      a.btn.btn-default(href='https://twitter.com/hi_sener' target='_blank' role='button' data-toggle='tooltip' title='Twitter')
+        i.fa.fa-twitter
+      a.btn.btn-default(href='mailto:hisener@yahoo.com' target='_blank' role='button' data-toggle='tooltip' title='Email')
+        i.fa.fa-envelope-o
 
 block append foot
   link(rel='stylesheet', href='style.css')
+  link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+  script(src='main.js')

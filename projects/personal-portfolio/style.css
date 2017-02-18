@@ -2,17 +2,8 @@ body {
   padding-top: 80px;
 }
 
-h1 {
-  font-size: 32px;
-}
-h2 {
-  font-size: 26px;
-}
-h3 {
-  font-size: 19px;
-}
-h4 {
-  font-size: 15px;
+ul {
+  list-style-type: square;
 }
 
 .container {
@@ -27,8 +18,22 @@ h4 {
   font-size: 14px;
   border-radius: 12px;
   line-height: 32px;
+  margin-right: 3px;
 }
 
 #tech-stack * hr {
   margin: 5px 0;
+}
+
+#portfolio * .btn {
+  margin-right: 3px;
+}
+
+#contact {
+  margin-bottom: 10px;
+}
+
+#contact * .btn {
+  border-radius: 24px;
+  margin-right: 5px;
 }
