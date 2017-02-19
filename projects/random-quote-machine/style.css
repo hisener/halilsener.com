@@ -1,0 +1,19 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+.header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.main {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 253px;
+}
+.author {
+  text-align: right;
+}

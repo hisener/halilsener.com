@@ -1,0 +1,30 @@
+extends ../global.layout.pug
+
+block append head
+  title Random Quote Machine - Halil Ibrahim Sener
+  meta(name='description' content='My personal webpage and freeCodeCamp projects')
+
+block content
+  .container
+    .row
+      .header
+        h1.text-center Random Quote Machine
+      .main
+        p.text-center
+          a.btn.btn-md.btn-success.new-quote(role='button') New Quote
+        .panel.panel-default
+          .panel-body.quote
+          .panel-footer.author
+        p#tweet-btn.text-center
+      footer.footer
+        span.text-muted
+          | powered by
+          |
+          a(href='http://forismatic.com/en/api/' target='_blank') forismatic api
+        span.pull-right
+          a(href='http://halilsener.com/') halilsener.com
+
+block append foot
+  link(rel='stylesheet', href='style.css')
+  script(src='https://platform.twitter.com/widgets.js')
+  script(src='main.js')

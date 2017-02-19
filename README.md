@@ -9,9 +9,9 @@ My personal webpage and projects from freeCodeCamp
 - [x] [Personal Portfolio Webpage](projects/personal-portfolio)
 
 ### Intermediate Front End Development Projects
-- [ ] Random Quote Machine
-- [ ] Local Weather
-- [ ] Wikipedia Viewer
+- [x] [Random Quote Machine](projects/random-quote-machine)
+- [x] Local Weather
+- [x] Wikipedia Viewer
 - [ ] Twitch.tv Streamers
 
 ### Advanced Front End Development Projects
@@ -21,7 +21,7 @@ My personal webpage and projects from freeCodeCamp
 - [ ] Simon Game
 
 ### React Projects
-- [x] [Markdown Previewer](https://hisener-markdown-previewer.herokuapp.com/)
+- [x] [Markdown Previewer](https://github.com/hisener/markdown-previewer)
 - [ ] Camper Leaderboard
 - [ ] Recipe Box
 - [ ] Game of Life
@@ -35,9 +35,9 @@ My personal webpage and projects from freeCodeCamp
 - [ ] Map Data Across the Globe
 
 ### API Projects
-- [x] [Timestamp Microservice](https://hisener-timestamp-api.herokuapp.com/)
-- [x] [Request Header Parser Microservice](http://hisener-header-parser.herokuapp.com/)
-- [x] [URL Shortener Microservice](https://hisener-url-shortener.herokuapp.com/)
+- [x] [Timestamp Microservice](https://github.com/hisener/timestamp-api)
+- [x] [Request Header Parser Microservice](https://github.com/hisener/header-parser)
+- [x] [URL Shortener Microservice](https://github.com/hisener/url-shortener)
 - [ ] Image Search Abstraction Layer
 - [ ] File Metadata Microservice
 
@@ -48,13 +48,16 @@ My personal webpage and projects from freeCodeCamp
 - [ ] Manage a Book Trading Club
 - [ ] Build a Pinterest Clone
 
-### TODO
+## Misc Projects
+- [x] [WebSocket Chat Example](https://github.com/hisener/ws-chat-example)
+
+## TODO
 - [x] Move domain after transfer
 - [x] git add CNAME
 - [x] Add Travis CI integration http://surge.sh/help/integrating-with-travis-ci
 - [x] Create initial portfolio page
 - [x] Move Tribute Page from CodePen
-- [ ] Move Random Quote Machine from CodePen
+- [x] Move Random Quote Machine from CodePen
 - [ ] Move Local weather from CodePen
 - [ ] Move Wikipedia Viewer from CodePen
 - [ ] Move Wikipedia Viewer (React) from CodePen
