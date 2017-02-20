@@ -10,7 +10,7 @@ My personal webpage and projects from freeCodeCamp
 
 ### Intermediate Front End Development Projects
 - [x] [Random Quote Machine](projects/random-quote-machine)
-- [x] Local Weather
+- [x] [Local Weather](projects/local-weather)
 - [x] Wikipedia Viewer
 - [ ] Twitch.tv Streamers
 
@@ -58,7 +58,8 @@ My personal webpage and projects from freeCodeCamp
 - [x] Create initial portfolio page
 - [x] Move Tribute Page from CodePen
 - [x] Move Random Quote Machine from CodePen
-- [ ] Move Local weather from CodePen
+- [x] <p class="text-center">(Source on github)</p>
+- [x] Move Local weather from CodePen
 - [ ] Move Wikipedia Viewer from CodePen
 - [ ] Move Wikipedia Viewer (React) from CodePen
 - [ ] Move Twitch Streamers template from CodePen
