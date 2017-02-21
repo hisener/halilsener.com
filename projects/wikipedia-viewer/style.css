@@ -1,0 +1,23 @@
+h2 {
+  margin-top: 0;
+}
+.results {
+  margin-top: 15px;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+button.btn.btn-default:nth-of-type(1) {
+  margin-right: 15px;
+}
+i.glyphicon {
+  margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .button-group {
+    margin-top: 10px;
+  }
+}
