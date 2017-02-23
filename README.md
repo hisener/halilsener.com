@@ -58,8 +58,9 @@ My personal webpage and projects from freeCodeCamp
 - [x] Create initial portfolio page
 - [x] Move Tribute Page from CodePen
 - [x] Move Random Quote Machine from CodePen
-- [x] <p class="text-center">(Source on github)</p>
+- [x] p.text-center (Source on github)
 - [x] Move Local weather from CodePen
 - [x] Move Wikipedia Viewer from CodePen
 - [ ] Move Wikipedia Viewer (React) from CodePen
 - [ ] Move Twitch Streamers template from CodePen
+- [ ] Add front-end projects to the portfolio

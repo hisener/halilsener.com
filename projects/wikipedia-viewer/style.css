@@ -10,10 +10,10 @@ a:hover {
 p {
   margin: 0;
 }
-button.btn.btn-default:nth-of-type(1) {
+.btn.btn-default:nth-of-type(1) {
   margin-right: 15px;
 }
-i.glyphicon {
+.glyphicon {
   margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
