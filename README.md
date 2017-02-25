@@ -61,6 +61,7 @@ My personal webpage and projects from freeCodeCamp
 - [x] p.text-center (Source on github)
 - [x] Move Local weather from CodePen
 - [x] Move Wikipedia Viewer from CodePen
+- [ ] Add labels to portfolio items like Node.js, Express.js, MongoDB
 - [ ] Move Wikipedia Viewer (React) from CodePen
 - [ ] Move Twitch Streamers template from CodePen
 - [ ] Add front-end projects to the portfolio

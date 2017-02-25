@@ -8,6 +8,18 @@ block append head
   meta(name='og:image' content='http://halilsener.com/img/avatar.png')
 
 block content
+  -
+    var portfolio = [
+      { title: 'WebSocket Chat Example', image: 'img/ws-chat-example.png', demo: 'https://ws-chat-example.herokuapp.com/', code: 'https://github.com/hisener/ws-chat-example' },
+      { title: 'Markdown Previewer', image: 'img/markdown-previewer.png', demo: 'https://hisener-markdown-previewer.herokuapp.com/', code: 'https://github.com/hisener/markdown-previewer' },
+      { title: 'Wikipedia Viewer', image: 'img/wikipedia-viewer.png', demo: 'http://halilsener.com/wikipedia-viewer/', code: 'https://github.com/hisener/halilsener.com/tree/master/projects/wikipedia-viewer' },
+      { title: 'Local Weather', image: 'img/local-weather.png', demo: 'http://halilsener.com/local-weather/', code: 'https://github.com/hisener/halilsener.com/tree/master/projects/local-weather' },
+      { title: 'Random Quote Machine', image: 'img/random-quote-machine.png', demo: 'http://halilsener.com/random-quote-machine/', code: 'https://github.com/hisener/halilsener.com/tree/master/projects/random-quote-machine' },
+      { title: 'Url Shortener Microservice', image: 'img/url-shortener.png', demo: 'https://hisener-url-shortener.herokuapp.com/', code: 'https://github.com/hisener/url-shortener' },
+      { title: 'Header Parser Microservice', image: 'img/header-parser.png', demo: 'http://hisener-header-parser.herokuapp.com/', code: 'https://github.com/hisener/header-parser' },
+      { title: 'Timestamp Microservice', image: 'img/timestamp-api.png', demo: 'https://hisener-timestamp-api.herokuapp.com/', code: 'https://github.com/hisener/timestamp-api' },
+    ]
+
   nav.navbar.navbar-default.navbar-fixed-top
     .container
       .navbar-header
@@ -36,7 +48,7 @@ block content
         h2 CS Student, Seeking Internship
         div.description
           ul
-            li Computer Science Student @ Hacettepe (Ankara, Turkey)
+            li Computer Science Student @ Hacettepe [13-18] (Ankara, Turkey)
             li Part-time Software Engineer @ MilSOFT Software Tech. (Ankara, Turkey)
             li Camper @ freeCodeCamp
             li Seeking Internship for Summer 2017
@@ -57,6 +69,7 @@ block content
         hr
         span.label.label-success ReactJS
         span.label.label-success HTML5
+        span.label.label-success CSS
         span.label.label-success Bootstrap
         span.label.label-success jQuery
         hr
@@ -76,46 +89,15 @@ block content
     .row
       .col-md-12
         h3 Portfolio
-      .col-sm-6.col-md-4
-        .thumbnail
-          img(src='img/ws-chat-example.png')
-          .caption
-            h4 WebSockets Chat Example
-            p
-              a.btn.btn-primary.btn-sm(href='https://ws-chat-example.herokuapp.com/' target='_blank' role='button') Demo
-              a.btn.btn-default.btn-sm(href='https://github.com/hisener/ws-chat-example' target='_blank' role='button') Code
-      .col-sm-6.col-md-4
-        .thumbnail
-          img(src='img/markdown-previewer.png')
-          .caption
-            h4 Markdown Previewer
-            p
-              a.btn.btn-primary.btn-sm(href='https://hisener-markdown-previewer.herokuapp.com/' target='_blank' role='button') Demo
-              a.btn.btn-default.btn-sm(href='https://github.com/hisener/markdown-previewer' target='_blank' role='button') Code
-      .col-sm-6.col-md-4
-        .thumbnail
-          img(src='img/url-shortener.png')
-          .caption
-            h4 Url Shortener Microservice
-            p
-              a.btn.btn-primary.btn-sm(href='https://hisener-url-shortener.herokuapp.com/' target='_blank' role='button') Demo
-              a.btn.btn-default.btn-sm(href='https://github.com/hisener/url-shortener' target='_blank' role='button') Code
-      .col-sm-6.col-md-4
-        .thumbnail
-          img(src='img/header-parser.png')
-          .caption
-            h4 Header Parser Microservice
-            p
-              a.btn.btn-primary.btn-sm(href='http://hisener-header-parser.herokuapp.com/' target='_blank' role='button') Demo
-              a.btn.btn-default.btn-sm(href='https://github.com/hisener/header-parser' target='_blank' role='button') Code
-      .col-sm-6.col-md-4
-        .thumbnail
-          img(src='img/timestamp-api.png')
-          .caption
-            h4 Timestamp Microservice
-            p
-              a.btn.btn-primary.btn-sm(href='https://hisener-timestamp-api.herokuapp.com/' target='_blank' role='button') Demo
-              a.btn.btn-default.btn-sm(href='https://github.com/hisener/timestamp-api' target='_blank' role='button') Code
+      each item in portfolio
+        .col-sm-6.col-md-4
+          .thumbnail
+            img(src=item.image)
+            .caption
+              h4= item.title
+              p
+                a.btn.btn-primary.btn-sm(href=item.demo target='_blank' role='button') Demo
+                a.btn.btn-default.btn-sm(href=item.code target='_blank' role='button') Code
 
   footer#contact
     .container
