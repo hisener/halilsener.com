@@ -45,20 +45,20 @@ block content
         img.img-responsive.img-circle(src='img/avatar.png')
       .col-sm-8
         h1 Halil Ibrahim Sener
-        h2 CS Student, Seeking Internship
+        h2 CS Student & Part-time Software Engineer
         div.description
           ul
-            li Computer Science Student @ Hacettepe [13-18] (Ankara, Turkey)
-            li Camper @ freeCodeCamp
-            li Seeking Internship for Summer 2017
-            li Former Part-time Software Engineer @ MilSOFT Software Tech. (Ankara, Turkey)
+            li Computer Science Student at #[a(href='http://www.cs.hacettepe.edu.tr/' target='_blank') Hacettepe] [13-18]
+            li Part-time Software Engineer at #[a(href='https://www.opsgenie.com/' target='_blank') OpsGenie] [since Aug 2017]
+            li Camper at freeCodeCamp
+            li Former Part-time Software Engineer at MilSOFT
+            li Ankara, Turkey
 
   #tech-stack.container
     .row
       .col-md-12
         h3 Technologies I actively use
         span.label.label-success JavaScript (ES6)
-        span.label.label-success JavaScript
         span.label.label-success C
         span.label.label-success Java
         hr
@@ -66,24 +66,31 @@ block content
         span.label.label-success Express.js
         hr
         span.label.label-success MongoDB
+        span.label.label-success MySQL
         hr
         span.label.label-success ReactJS
         span.label.label-success HTML5
-        span.label.label-success CSS
         span.label.label-success Bootstrap
         span.label.label-success jQuery
         hr
-        span.label.label-success npm
-        span.label.label-success Heroku
         span.label.label-success Git
         span.label.label-success GitHub
-        span.label.label-success Subversion
-        hr
-        span I have used in past&nbsp;
-        span.label.label-warning PHP
-        span.label.label-warning MySQL
-        span.label.label-warning CodeIgniter
-        span.label.label-warning WordPress
+        span.label.label-success npm
+        span.label.label-success Heroku
+
+  #contact
+    .container
+      h3 Contact
+      a.btn.btn-default(href='https://github.com/hisener' target='_blank' role='button' data-toggle='tooltip' title='GitHub')
+        i.fa.fa-github
+      a.btn.btn-default(href='https://www.freecodecamp.com/hisener' target='_blank' role='button' data-toggle='tooltip' title='freeCodeCamp')
+        i.fa.fa-free-code-camp
+      a.btn.btn-default(href='https://www.linkedin.com/in/hisener' target='_blank' role='button' data-toggle='tooltip' title='LinkedIn')
+        i.fa.fa-linkedin
+      a.btn.btn-default(href='https://twitter.com/hi_sener' target='_blank' role='button' data-toggle='tooltip' title='Twitter')
+        i.fa.fa-twitter
+      a.btn.btn-default(href='mailto:hisener@yahoo.com' target='_blank' role='button' data-toggle='tooltip' title='Email')
+        i.fa.fa-envelope-o
 
   #portfolio.container
     .row
@@ -98,20 +105,6 @@ block content
               p
                 a.btn.btn-primary.btn-sm(href=item.demo target='_blank' role='button') Demo
                 a.btn.btn-default.btn-sm(href=item.code target='_blank' role='button') Code
-
-  footer#contact
-    .container
-      h3 Contact
-      a.btn.btn-default(href='https://github.com/hisener' target='_blank' role='button' data-toggle='tooltip' title='GitHub')
-        i.fa.fa-github
-      a.btn.btn-default(href='https://www.freecodecamp.com/hisener' target='_blank' role='button' data-toggle='tooltip' title='freeCodeCamp')
-        i.fa.fa-free-code-camp
-      a.btn.btn-default(href='https://www.linkedin.com/in/hisener' target='_blank' role='button' data-toggle='tooltip' title='LinkedIn')
-        i.fa.fa-linkedin
-      a.btn.btn-default(href='https://twitter.com/hi_sener' target='_blank' role='button' data-toggle='tooltip' title='Twitter')
-        i.fa.fa-twitter
-      a.btn.btn-default(href='mailto:hisener@yahoo.com' target='_blank' role='button' data-toggle='tooltip' title='Email')
-        i.fa.fa-envelope-o
 
 block append foot
   link(rel='stylesheet', href='style.css')
