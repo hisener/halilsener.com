@@ -5,7 +5,7 @@ var parseQuote = function (obj) { // eslint-disable-line no-unused-vars
   $('#tweet-btn').empty()
 
   twttr.widgets.createShareButton(
-    'http://halilsener.com/random-quote-machine/',
+    'https://halilsener.com/random-quote-machine/',
     document.getElementById('tweet-btn'),
     {
       text: obj.quoteText + ' - ' + obj.quoteAuthor || '-',
@@ -19,7 +19,7 @@ var parseQuote = function (obj) { // eslint-disable-line no-unused-vars
 
 var ajaxRequest = function () {
   $.ajax({
-    url: 'http://api.forismatic.com/api/1.0/',
+    url: 'https://api.forismatic.com/api/1.0/',
     jsonp: 'callback',
     dataType: 'jsonp',
     data: { method: 'getQuote', format: 'jsonp', lang: 'en', jsonp: 'parseQuote' }

@@ -46,7 +46,7 @@ var getLocation = function (callback) {
 var getWeather = function (location) {
   if (!location) return getWeather('London, UK')
 
-  $.getJSON('http://api.openweathermap.org/data/2.5/weather?callback=?', {
+  $.getJSON('https://api.openweathermap.org/data/2.5/weather?callback=?', {
     q: location,
     units: 'metric',
     APPID: '8525059d8fe9de298f4a8eb9724ef801'
