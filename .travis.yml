@@ -6,9 +6,13 @@ cache:
   directories:
     - node_modules
 
-before_deploy: "npm run build"
+before_deploy:
+  - npm run build
+  - chmod +x ./scripts/netlify_deploy.sh
 
 deploy:
-  provider: surge
-  project: ./build/
+  provider: script
+  script: scripts/netlify_deploy.sh
   skip_cleanup: true
+  on:
+    branch: master
