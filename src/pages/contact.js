@@ -6,7 +6,7 @@ import Helmet from 'react-helmet';
 import Separator from './../components/Separator';
 import Menu from './../components/Menu';
 import MetaTags from './../components/MetaTags';
-import AvatarImg from './../../static/images/avatar.jpg';
+import AvatarImg from './../../static/images/avatar.png';
 
 export default function Contact({ data }) {
   const { title, description, siteUrl } = data.site.siteMetadata;
@@ -27,7 +27,7 @@ export default function Contact({ data }) {
               <img
                 className="header-avatar"
                 src={AvatarImg}
-                alt="Kostas Bariotis"
+                alt="Halil İbrahim Şener"
               />
               <h1>In need for a Web Developer? <br/>Search no more.</h1>
             </div>

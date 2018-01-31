@@ -51,4 +51,4 @@ As about performance, these days you have a lot of tools in order to create a fa
 
 After a few projects, i realized that a lot of processes were repeated again and again. The same modules i will installed on every fresh Magento install, the same configuration i would do. So i keep a private(yet!) Magento repository were i have all of my Modules and a clean Database dump with my configuration set.
 
-How do you deal with your Magento projects? Share your tactics and technics with me on <a title="Kostas Bariotis on Twitter" href="http://twitter.com/kbariotis" target="_blank">Twitter </a>or bellow in the comments.
+How do you deal with your Magento projects? Share your tactics and technics with me on <a title="Halil İbrahim Şener on Twitter" href="http://twitter.com/kbariotis" target="_blank">Twitter </a>or bellow in the comments.

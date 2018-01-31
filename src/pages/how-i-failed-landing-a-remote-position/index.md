@@ -27,7 +27,7 @@ This is the final version of it because I had to do some revises after I sent it
 
 > Dear Mr/Ms,
 >
-> I am Kostas Bariotis, a software developer and a passionate doer. I am sending you my regards from sunny Thessaloniki, Greece. Have you ever been? Take a look, I am sure you will fall in love with the amazing beaches of Chalkidiki.
+> I am Halil İbrahim Şener, a software developer and a passionate doer. I am sending you my regards from sunny Thessaloniki, Greece. Have you ever been? Take a look, I am sure you will fall in love with the amazing beaches of Chalkidiki.
 >
 > I am currently looking for a product and a team that I would be a great fit in. I stumbled upon your job description and I would really love it to talk more with you guys. I have been working with Node.js for the past three years. (**This is where I explain why I would be a good fit for that particular position**)
 >

@@ -1,10 +1,11 @@
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
-    author: 'Kostas Bariotis!',
-    title: `Kostas Bariotis' Blog`,
-    siteUrl: `https://kostasbariotis.com`,
-    description: `I'm Kostas Bariotis, a web developer, a proud wanderer and a passionate doer. My mission is to write clean and efficient code, to solve problems on the web and to learn something more.`
+    author: 'Halil İbrahim Şener',
+    title: `Halil İbrahim Şener`,
+    siteUrl: `https://halilsener.com`,
+    description: `I'm Halil İbrahim Şener.`,
+    tags: "software development"
   },
   plugins: [
     'gatsby-plugin-catch-links',
@@ -42,88 +43,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-40793458-2',
+        trackingId: 'UA-91454609-1',
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Kostas Bariotis",
-        short_name: "KBariotis",
+        name: "Halil İbrahim Şener",
+        short_name: "hisener",
         start_url: "/",
         theme_color: "#676d9c",
         display: "minimal-ui",
         icons: [
-          {
-            src: `/favicons/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicons/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon/apple-touch-icon-57x57.png`,
-            sizes: `57x57`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon/apple-touch-icon-60x60.png`,
-            sizes: `60x60`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon/apple-touch-icon-72x72.png`,
-            sizes: `72x72`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon/apple-touch-icon-76x76.png`,
-            sizes: `76x76`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon/apple-touch-icon-114x114.png`,
-            sizes: `114x114`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon/apple-touch-icon-120x120.png`,
-            sizes: `120x120`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon/apple-touch-icon-144x144.png`,
-            sizes: `144x144`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon/apple-touch-icon-152x152.png`,
-            sizes: `152x152`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon/apple-touch-icon-180x180.png`,
-            sizes: `180x180`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon/favicon-36x36.png`,
-            sizes: `36x36`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon/favicon-96x96.png`,
-            sizes: `96x96`,
-            type: `image/png`,
-          },
         ],
       },
     },
@@ -133,7 +64,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://kostasbariotis.com`,
+        siteUrl: `https://halilsener.com`,
       }
     },
     {

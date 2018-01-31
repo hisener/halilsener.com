@@ -4,9 +4,14 @@
   "version": "1.0.0",
   "description": "My personal webpage",
   "scripts": {
-    "build": "gulp build-pug && gulp build",
-    "clean": "gulp clean",
-    "test": "echo \"Error: no test specified\""
+    "build": "gatsby build --prefix-paths",
+    "deploy": "gh-pages -d public",
+    "develop": "gatsby develop",
+    "preserve": "npm run build",
+    "serve": "gatsby serve",
+    "start": "npm run develop",
+    "format": "prettier --trailing-comma es5 --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Error: No tests specified.!\""
   },
   "repository": {
     "type": "git",

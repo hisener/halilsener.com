@@ -17,7 +17,7 @@ function tweet() {
 export default () =>
   <div>
     <Helmet
-      title="Not found - Kostas Bariotis"
+      title="Not found - Halil İbrahim Şener"
       meta={[{ name: 'description', content: 'Not found' }]}
       noIndex={true}
     />

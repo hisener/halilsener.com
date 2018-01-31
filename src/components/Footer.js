@@ -13,7 +13,7 @@ const Footer = () =>
               to="/"
               title="Kostasbariotis.com Home"
             >
-              Kostas Bariotis
+              Halil İbrahim Şener
             </GatsbyLink>, a web developer, a proud wanderer and a passionate
             doer. My mission is to write clean and efficient code, to solve
             problems on the Web and to learn something more. Read{' '}
@@ -86,8 +86,8 @@ const Footer = () =>
       </ul>
       <div className="text-center">
         Copyright {new Date().getFullYear()}{' '}
-        <GatsbyLink to="/" title="Kostas Bariotis Blog">
-          Kostas Bariotis
+        <GatsbyLink to="/" title="Halil İbrahim Şener Blog">
+          Halil İbrahim Şener
         </GatsbyLink>{' '}
         <span className="separator"> • </span> Design by{' '}
         <a href="http://www.attheo.do" target="_blank">

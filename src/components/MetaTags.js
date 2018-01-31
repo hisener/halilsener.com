@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
-import AvatarImg from './../../static/images/avatar.jpg';
+import AvatarImg from './../../static/images/avatar.png';
 
 const MetaTags = ({ title, description, path, tags, noIndex, siteUrl }) =>
   <div>
@@ -15,7 +15,7 @@ const MetaTags = ({ title, description, path, tags, noIndex, siteUrl }) =>
     >
       {noIndex && <meta name="robots" content="noindex" />}
 
-      <meta property="og:site_name" content="Kostas Bariotis" />
+      <meta property="og:site_name" content="Halil İbrahim Şener" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

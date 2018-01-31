@@ -12,7 +12,7 @@ import NavigateLink from '../components/NavigateLink';
 import Separator from '../components/Separator';
 import MetaTags from '../components/MetaTags';
 
-import avatarImg from './../../static/images/avatar.jpg';
+import AvatarImg from './../../static/images/avatar.png';
 
 const {
   FacebookShareButton,
@@ -58,11 +58,11 @@ export default function Template({ data, pathContext }) {
                       className="author-avatar"
                       itemProp="name"
                     >
-                      <img src={avatarImg} alt="Kostas Bariotis" />
+                      <img src={AvatarImg} alt="Halil İbrahim Şener" />
                     </GatsbyLink>
                   </li>
                   <li>
-                    <div className="author-name">Kostas Bariotis</div>
+                    <div className="author-name">Halil İbrahim Şener</div>
                     <time
                       className="post-date"
                       dateTime={dateformat(

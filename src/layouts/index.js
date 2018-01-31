@@ -22,7 +22,7 @@ export default class Template extends React.Component {
     return (
       <div>
         <Helmet
-          title="Kostas Bariotis"
+          title="Halil İbrahim Şener"
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },

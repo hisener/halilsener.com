@@ -1,17 +1,16 @@
 import React from 'react';
 import GatsbyLink from 'gatsby-link';
-import dateformat from 'dateformat';
 
 import Separator from './../components/Separator';
 import Menu from './../components/Menu';
 import Posts from './../components/Posts';
 import MetaTags from './../components/MetaTags';
 
-import avatarImage from './../../static/images/avatar.jpg';
+import AvatarImg from './../../static/images/avatar.png';
 
 export default function Index({ data }) {
   let { edges: posts } = data.allMarkdownRemark;
-  let { description, title, siteUrl } = data.site.siteMetadata;
+  let { author, description, title, siteUrl, tags } = data.site.siteMetadata;
   posts = posts.map(post => post.node);
   return (
     <div>
@@ -19,7 +18,7 @@ export default function Index({ data }) {
         title={title}
         path={``}
         siteUrl={siteUrl}
-        tags="webdev, programming, javascript"
+        tags={tags}
         description={description}
       />
       <Menu />
@@ -29,16 +28,12 @@ export default function Index({ data }) {
             <GatsbyLink to="/" className="blog-header__link" itemProp="name">
               <img
                 className="header-avatar blog-header__img"
-                src={avatarImage}
-                alt="Kostas Bariotis"
+                src={AvatarImg}
+                alt={author}
               />
             </GatsbyLink>
-            <h1>Kostas Bariotis</h1>
-            <p>
-              I'm Kostas Bariotis, a web developer, a proud wanderer and a
-              passionate doer. My mission is to write clean and efficient code,
-              to solve problems on the web and to learn something more.
-            </p>
+            <h1>{author}</h1>
+            <p>{description}</p>
           </div>
           <header className="header">Latest Posts</header>
           <Separator />

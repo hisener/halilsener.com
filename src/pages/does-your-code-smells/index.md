@@ -47,4 +47,4 @@ Now this is not just it. This book is a treasure for every programmer. If i got 
 What's your favorite notes and rules about writing clean code?
 
 &nbsp;
-<h3>If you like this article, take a look on a <a title="How to write clean and efficient code" href="https://medium.com/@kbariotis/how-to-write-clean-efficient-code-f53fd67131f9" target="_blank">similar </a>i have wrote on @medium and follow me on <a title="Kostas Bariotis on Twitter" href="http://twitter.com/kbariotis" target="_blank">twitter</a>.</h3>
+<h3>If you like this article, take a look on a <a title="How to write clean and efficient code" href="https://medium.com/@kbariotis/how-to-write-clean-efficient-code-f53fd67131f9" target="_blank">similar </a>i have wrote on @medium and follow me on <a title="Halil İbrahim Şener on Twitter" href="http://twitter.com/kbariotis" target="_blank">twitter</a>.</h3>
