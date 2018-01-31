@@ -1,9 +1,9 @@
-# node_modules
-node_modules
-
-# build folders
-build
-build-html
-
-# WebStorm folder
-.idea
+node_modules/
+build/
+build-html/
+.idea/
+.gatsby-context.js
+.sass-cache/
+public/
+.cache/
+.DS_Store
