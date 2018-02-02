@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
-    author: 'Halil İbrahim Şener',
+    author: `Halil İbrahim Şener`,
     title: `Halil İbrahim Şener`,
     siteUrl: `https://halilsener.com`,
     description: `I'm Halil İbrahim Şener.`,
@@ -25,7 +25,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: 'language-',
+              // classPrefix: 'language-',
             },
           },
           {
@@ -52,7 +52,7 @@ module.exports = {
         name: "Halil İbrahim Şener",
         short_name: "hisener",
         start_url: "/",
-        theme_color: "#676d9c",
+        theme_color: "#2c3e50",
         display: "minimal-ui",
         icons: [
         ],

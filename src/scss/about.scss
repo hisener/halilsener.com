@@ -6,7 +6,7 @@
         padding-bottom: 15px;
     }
     header {
-        color: $red;
+        color: $active;
         .header-avatar {
             width: 150px;
             height: 150px;
@@ -15,17 +15,16 @@
         }
     }
     .about-section-title {
-        color: $red;
+        color: $active;
         font-weight: 700;
     }
     .about-section {
         margin-top: 40px;
-        margin-bottom: 40px;
         .row {
             margin-bottom: 20px;
         }
         .bio-date {
-            color: $lightblue;
+            color: $default;
         }
         .text-right {
             @media(max-width: 768px) {

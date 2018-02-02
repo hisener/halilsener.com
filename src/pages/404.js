@@ -5,15 +5,6 @@ import Helmet from 'react-helmet';
 import Separator from './../components/Separator';
 import Menu from './../components/Menu';
 
-function tweet() {
-  window.open(
-    'https://twitter.com/intent/tweet?text=@kbariotis%20I%20found%20a%20missing%20page!%20You%20should%20really%20check%20it.%20🙏',
-    'twitter-share',
-    'width=550,height=235'
-  );
-  return false;
-}
-
 export default () =>
   <div>
     <Helmet
@@ -26,17 +17,17 @@ export default () =>
       <div className="medium-8 medium-offset-2 large-10 large-offset-1">
         <header className="header">
           <div className="row text-center">
-            <h1>AW NO! The page you are trying to access is not here.</h1>
+            <h1>404! The page you are trying to access is not here.</h1>
           </div>
         </header>
         <Separator />
         <p className="not-found-section">
           Sorry for the inconvience. You can go to the{' '}
           <GatsbyLink to="/">home page</GatsbyLink> or{' '}
-          <a href="#" onClick={tweet}>
+          <a href="https://twitter.com/intent/tweet?text=@hi_sener%20Hi!" target="_blank">
             tweet me
           </a>{' '}
-          about this incident. Thanks ✌️
+          about this incident. Thanks.
         </p>
       </div>
     </section>

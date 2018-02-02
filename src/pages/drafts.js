@@ -1,6 +1,5 @@
 import React from 'react';
 import GatsbyLink from 'gatsby-link';
-import dateformat from 'dateformat';
 
 import Separator from './../components/Separator';
 import Menu from './../components/Menu';
@@ -36,13 +35,9 @@ export default function Index({ data }) {
           <div className="posts">
             <Posts posts={posts} />
             <Separator />
-            <article className="post text-right">
-              <header className="post-head">
-                <h3 className="post-title">
-                  <GatsbyLink to="/drafts/page/2">Older Posts &gt;</GatsbyLink>
-                </h3>
-              </header>
-            </article>
+            <div className="text-right">
+              <GatsbyLink to="/page/2">Older Posts &gt;</GatsbyLink>
+            </div>
           </div>
         </div>
       </section>

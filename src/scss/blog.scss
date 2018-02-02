@@ -1,10 +1,6 @@
 .blog {
-    margin-top: 80px;
     .home-template & {
         margin-top: 100px;
-    }
-    @media(max-width: 768px) {
-        margin-top: 50px;
     }
     .newer-posts {
         float: left;
@@ -31,15 +27,15 @@
         margin-bottom: 10px;
         margin-top: 10px;
         display: block;
-        background: linear-gradient(to right, #e52f45 0%, #e52f45 25%, #b42b3e 25%, #b42b3e 50%, #8ab2ff 50%, #8ab2ff 75%, #4d71b7 75%, #4d71b7 100%);
+        background: linear-gradient(to right, #e52f45 0%, #e52f45 25%, #b42b3e 25%, #b42b3e 50%, $default 50%, $default 75%, #4d71b7 75%, #4d71b7 100%);
     }
 
     .post {
         .post-title {
-            color: $red;
+            color: $active;
             font-size: 2.6em;
             font-weight: 700;
-            margin-bottom: 2 * $vpadding;
+            margin-bottom: 1.5 * $vpadding;
             @media(max-width: 768px) {
                 text-align: left;
             }
@@ -49,8 +45,7 @@
         .post-title {
             font-size: 1.5em;
             font-weight: 700;
-            margin-bottom: 2 * $vpadding;
-            color: $lightblue;
+            color: $default;
             margin-bottom: 5px;
             @media(max-width: 768px) {
                 text-align: left;
@@ -58,21 +53,16 @@
         }
         .post {
             margin-bottom: 40px;
-            color: rgba(255, 255, 255, 0.8);
-        }
-        time {
-            color: rgba(255, 255, 255, 0.5);
         }
         .post-excerpt {
             margin-top: 20px;
         }
-        .post-meta .tags {
-            color: rgba(255, 255, 255, 0.5);
+        .text-right a {
+            font-size: 1.25em;
+            font-weight: 700;
         }
     }
     article.main-post {
-        margin-top: 50px;
-        color: rgba(255, 255, 255, 0.8);
         img {
             max-width: 100%;
         }
@@ -82,67 +72,10 @@
         h4,
         h5,
         h6 {
-            color: $lightblue;
+            color: $default;
         }
         blockquote {
-            color: rgba(255, 255, 255, 0.5);
             border-left-color: $purple;
-        }
-        p {
-            padding-bottom: 20px;
-        }
-        .post-footer {
-            padding-top: 40px;
-            padding-bottom: 40px;
-            font-size: 1.2em;
-            .share-buttons {
-                li {
-                    @media (max-width: 768px) {
-                        display: block;
-                        line-height: 40px;
-                    }
-                }
-            }
-            .share-twitter {
-                color: #00aced;
-                @media (max-width: 768px) {
-                    background-color: #00aced;
-                    color: #fff;
-                    padding: 5px;
-                    width: 100%;
-                    display: block;
-                }
-            }
-            .share-reddit {
-                color: #ff5700;
-                @media (max-width: 768px) {
-                    background-color: #ff5700;
-                    color: #fff;
-                    padding: 5px;
-                    width: 100%;
-                    display: block;
-                }
-            }
-            .share-facebook {
-                color: #3b5998;
-                @media (max-width: 768px) {
-                    background-color: #3b5998;
-                    color: #fff;
-                    padding: 5px;
-                    width: 100%;
-                    display: block;
-                }
-            }
-            .share-google-plus {
-                color: #dd4b39;
-                @media (max-width: 768px) {
-                    background-color: #dd4b39;
-                    color: #fff;
-                    padding: 5px;
-                    width: 100%;
-                    display: block;
-                }
-            }
         }
     }
     .post-meta {
@@ -161,11 +94,11 @@
         .tags li {
             font-size: 0.8em;
             margin: 5px 5px;
-            border: 2px solid $lightblue;
+            border: 2px solid $default;
             text-align: center;
             border-radius: 100px / 100px;
             a {
-                color: $lightblue;
+                color: $active;
                 display: block;
                 width: auto;
                 height: 30px;
@@ -177,18 +110,15 @@
                 text-decoration: none;
             }
             &:hover {
-                background: $lightblue;
-                a {
-                    color: $darkpurple;
-                }
+                background: $default;
             }
             &.draft-tag {
-                border-color: $red;
+                border-color: $active;
                 a {
-                    color: $red;
+                    color: $active;
                 }
                 &:hover {
-                    background: $red;
+                    background: $active;
                     a {
                         color: white;
                     }
@@ -200,22 +130,14 @@
 
 .tags-collection {
     .tag-title {
-        color: $red;
+        color: $active;
     }
     .tag-meta {
         margin-bottom: 50px;
     }
 }
 
-code {
-    background: #2d2d2d;
-    color: #FF9619;
-    border-radius: 4px;
-}
-
 .blog-section {
-    margin-top: 50px;
-
     .header {
         margin-bottom: 25px;
     }
@@ -232,7 +154,7 @@ code {
 .navigate-link {
     font-size: 22px;
     font-weight: bold;
-    color: #8ab2ff;
+    color: $default;
     margin-bottom: 5px;
 }
 
@@ -276,4 +198,115 @@ code {
 .anchor {
     color: white;
     fill: currentColor;
+}
+
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #7D8B99;
+}
+
+.token.punctuation {
+    color: #5F6364;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.function-name,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #c92c2c;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.function,
+.token.builtin,
+.token.inserted {
+    color: #2f9c0a;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+    color: #a67f59;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.class-name {
+    color: #1990b8;
+}
+
+.token.regex,
+.token.important {
+    color: #e90;
+}
+
+.language-css .token.string,
+.style .token.string {
+    color: #a67f59;
+}
+
+.token.important {
+    font-weight: normal;
+}
+
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+/* Plugin styles */
+.token.tab:not(:empty):before,
+.token.cr:before,
+.token.lf:before {
+    color: #e0d7d1;
+}
+
+/* Plugin styles: Line Numbers */
+pre[class*="language-"].line-numbers {
+    padding-left: 0;
+}
+
+pre[class*="language-"].line-numbers code {
+    padding-left: 3.8em;
+}
+
+pre[class*="language-"].line-numbers .line-numbers-rows {
+    left: 0;
+}
+
+/* Plugin styles: Line Highlight */
+pre[class*="language-"][data-line] {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+pre[data-line] code {
+    position: relative;
+    padding-left: 4em;
+}
+pre .line-highlight {
+    margin-top: 0;
 }

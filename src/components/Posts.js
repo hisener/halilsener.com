@@ -20,12 +20,12 @@ const Posts = ({ posts }) =>
               </GatsbyLink>
             </h1>
           </header>
-          <time
+          <span
             className="post-date"
             dateTime={dateformat(post.frontmatter.date, 'isoDateTime')}
           >
             {dateformat(post.frontmatter.date, 'dd mmmm yyyy')}
-          </time>
+          </span>
           <section className="post-excerpt">
             <p>
               {post.excerpt}{' '}

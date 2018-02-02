@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import dateformat from 'dateformat';
 import GatsbyLink from 'gatsby-link';
 import { ShareButtons } from 'react-share';
@@ -8,7 +7,6 @@ import uuidv5 from 'uuid/v5';
 
 import Menu from '../components/Menu';
 import BulletListTags from '../components/BulletListTags';
-import NavigateLink from '../components/NavigateLink';
 import Separator from '../components/Separator';
 import MetaTags from '../components/MetaTags';
 
@@ -63,7 +61,7 @@ export default function Template({ data, pathContext }) {
                   </li>
                   <li>
                     <div className="author-name">Halil İbrahim Şener</div>
-                    <time
+                    <span
                       className="post-date"
                       dateTime={dateformat(
                         post.frontmatter.date,
@@ -71,7 +69,7 @@ export default function Template({ data, pathContext }) {
                       )}
                     >
                       {dateformat(post.frontmatter.date, 'd mmmm yyyy')}
-                    </time>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -84,63 +82,12 @@ export default function Template({ data, pathContext }) {
             </div>
           </section>
           <Separator />
-          <article className="main-post {{post_class}}">
+          <article className="main-post">
             <section
               className="post-content"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
             <Separator />
-            <footer className="post-footer">
-              <section className="share text-center">
-                {!post.frontmatter.draft
-                  ? <ul className="share-buttons list-inline">
-                      <li>
-                        <b>Share this post on</b>
-                      </li>
-                      <li className="link-twitter">
-                        <TwitterShareButton
-                          url={fullUrl}
-                          title={post.frontmatter.title}
-                          via="kbariotis"
-                          className="share-twitter"
-                        >
-                          <span>Twitter</span>
-                        </TwitterShareButton>
-                      </li>
-                      <li className="link-facebook">
-                        <FacebookShareButton
-                          url={fullUrl}
-                          className="share-facebook"
-                        >
-                          <span>Facebook</span>
-                        </FacebookShareButton>
-                      </li>
-                      <li className="link-google-plus">
-                        <GooglePlusShareButton
-                          url={fullUrl}
-                          className="share-google-plus"
-                        >
-                          <span>Google+</span>
-                        </GooglePlusShareButton>
-                      </li>
-                      <li
-                        className="link-reddit"
-                        title={post.frontmatter.title}
-                      >
-                        <RedditShareButton
-                          url={fullUrl}
-                          className="share-reddit"
-                        >
-                          <span>Reddit</span>
-                        </RedditShareButton>
-                      </li>
-                    </ul>
-                  : <small>
-                      This is a draft post, thus sharing is disabled. Please do
-                      not share untill is ready for prime time.
-                    </small>}
-              </section>
-            </footer>
 
             <section className="blog-section">
               <header className="header">
@@ -154,14 +101,8 @@ export default function Template({ data, pathContext }) {
                   url={fullUrl}
                 />}
             </section>
-
-            <section className="blog-section">
-              <header className="header">
-                <h2>Read Next</h2>
-              </header>
-              <NavigateLink post={next} />
-            </section>
           </article>
+          <Separator />
         </div>
       </main>
     </div>

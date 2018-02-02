@@ -4,10 +4,9 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
 import '../scss/boot.scss';
-// import 'bootstrap-sa../static/javascripts/bootstrap/collapse.js';
 
 import Footer from '../components/Footer';
-import MetaTags from '../components/MetaTags';
+import Separator from '../components/Separator';
 
 export default class Template extends React.Component {
   static propTypes = {
@@ -34,9 +33,7 @@ export default class Template extends React.Component {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
           <meta name="HandheldFriendly" content="True" />
         </Helmet>
-        <section className="main-content">
-          {this.props.children()}
-        </section>
+        {this.props.children()}
         <Footer />
       </div>
     );

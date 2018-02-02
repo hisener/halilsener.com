@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Separator = () => <div className="separator" />;
+const Separator = () => <hr />;
 
 export default Separator;
