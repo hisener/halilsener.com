@@ -3,11 +3,14 @@ title: "The dollar sign in *nix"
 path: "/the-dollar-sign-in-nix/"
 date: "2018-02-03T08:00:00.000Z"
 tags: TL;DR, Linux, Unix, Bash
+draft: true
 ---
 
-I wrote this post to use it when I forget the usage of `$` sign. And, I think it would be useful for beginners like me, too.
+I wrote this post to use it when I forget the usage of `$` sign.
+And, I think it would be useful for beginners like me, too.
 
-Also, this is the first post of the TL;DR series. I hope it won't be the last.
+Also, this is the first post of the TL;DR series. I am planning that posts
+in this series contain less writing and more coding. I hope it won't be the last.
 
 Let's get started.
 

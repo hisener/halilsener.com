@@ -15,7 +15,7 @@ export default function Tags({ pathContext, data }) {
     <section className="main-content">
       <MetaTags
         title={`${tag} - ${title}`}
-        description={`All posts talking about ${tag}`}
+        description={`All posts about ${tag}`}
         tags={tag}
         siteUrl={siteUrl}
         path={`/tag/${tag}`}

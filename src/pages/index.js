@@ -12,6 +12,16 @@ export default function Index({ data }) {
   let { edges: posts } = data.allMarkdownRemark;
   let { author, description, title, siteUrl, tags } = data.site.siteMetadata;
   posts = posts.map(post => post.node);
+
+  let olderPosts;
+  if (posts.length > 5) {
+    olderPosts = (
+      <div className="text-right">
+        <GatsbyLink to="/page/2">Older Posts &gt;</GatsbyLink>
+      </div>
+    );
+  }
+
   return (
     <div>
       <MetaTags
@@ -40,9 +50,7 @@ export default function Index({ data }) {
           <div className="posts">
             <Posts posts={posts} />
             <Separator />
-            <div className="text-right">
-              <GatsbyLink to="/page/2">Older Posts &gt;</GatsbyLink>
-            </div>
+            {olderPosts}
           </div>
         </div>
       </section>

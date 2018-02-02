@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const CommaSeparatedTags = ({ tags }) =>
   <div className="tags">
-    Talking about:{' '}
+    Tags:{' '}
     {tags &&
       tags.split(', ').map((tag, index, array) =>
         <span key={index}>
