@@ -1,7 +1,7 @@
 ---
 title: "The dollar sign in *nix"
 path: "/the-dollar-sign-in-nix/"
-date: "2018-02-03T08:00:00.000Z"
+date: "2018-02-05T09:00:00.000Z"
 tags: TL;DR, Linux, Unix, Bash
 draft: true
 ---
