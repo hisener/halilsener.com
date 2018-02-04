@@ -1,6 +1,7 @@
 import React from 'react';
 import GatsbyLink from 'gatsby-link';
 import PropTypes from 'prop-types';
+import dashify from 'dashify'
 
 const CommaSeparatedTags = ({ tags }) =>
   <div className="tags">
@@ -8,7 +9,7 @@ const CommaSeparatedTags = ({ tags }) =>
     {tags &&
       tags.split(', ').map((tag, index, array) =>
         <span key={index}>
-          <GatsbyLink to={`/tag/${tag}/`}>
+          <GatsbyLink to={`/tag/${dashify(tag)}/`}>
             {tag}
           </GatsbyLink>
           {index < array.length - 1 ? ', ' : ''}

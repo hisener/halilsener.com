@@ -1,4 +1,5 @@
 const path = require('path');
+const dashify = require('dashify');
 
 /**
  * This is where all starts
@@ -104,10 +105,11 @@ function createTagPages (createPage, edges) {
 
       const pageSize = 5;
       const pagesSum = Math.ceil(posts[tagName].length / pageSize);
+      const tagSlug = dashify(tagName);
 
       for (let page = 1; page <= pagesSum; page++) {
         createPage({
-          path: page === 1 ? `/tag/${tagName}` : `/tag/${tagName}/page/${page}`,
+          path: page === 1 ? `/tag/${tagSlug}` : `/tag/${tagSlug}/page/${page}`,
           component: tagTemplate,
           context: {
             posts: paginate(posts[tagName], pageSize, page),
@@ -118,7 +120,7 @@ function createTagPages (createPage, edges) {
         })
       }
     });
-};
+}
 
 /**
  * Create pagination for posts
@@ -142,7 +144,7 @@ function createPagination (createPage, edges, pathPrefix) {
       }
     })
   }
-};
+}
 
 function paginate(array, page_size, page_number) {
   return array.slice(0).slice((page_number - 1) * page_size, page_number * page_size);

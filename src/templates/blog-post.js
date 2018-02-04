@@ -1,7 +1,6 @@
 import React from 'react';
 import dateformat from 'dateformat';
 import GatsbyLink from 'gatsby-link';
-import { ShareButtons } from 'react-share';
 import ReactDisqusThread from 'react-disqus-thread';
 import uuidv5 from 'uuid/v5';
 
@@ -11,14 +10,6 @@ import Separator from '../components/Separator';
 import MetaTags from '../components/MetaTags';
 
 import AvatarImg from './../../static/images/avatar.png';
-
-const {
-  FacebookShareButton,
-  GooglePlusShareButton,
-  LinkedinShareButton,
-  TwitterShareButton,
-  RedditShareButton,
-} = ShareButtons;
 
 export default function Template({ data, pathContext }) {
   const { markdownRemark: post } = data;

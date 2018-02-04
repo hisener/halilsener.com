@@ -1,11 +1,11 @@
 import React from 'react';
-import GatsbyLink from 'gatsby-link';
 
 import Posts from '../components/Posts';
 import Menu from '../components/Menu';
 import Pagination from '../components/TagsPagination';
 import Separator from '../components/Separator';
 import MetaTags from '../components/MetaTags';
+import dashify from 'dashify'
 
 export default function Tags({ pathContext, data }) {
   const { title, siteUrl } = data.site.siteMetadata;
@@ -18,7 +18,7 @@ export default function Tags({ pathContext, data }) {
         description={`All posts about ${tag}`}
         tags={tag}
         siteUrl={siteUrl}
-        path={`/tag/${tag}`}
+        path={`/tag/${dashify(tag)}`}
       />
       <Menu />
       <section className="blog container tags-collection">

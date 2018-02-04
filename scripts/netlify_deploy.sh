@@ -2,7 +2,7 @@
 
 set -e
 
-zip -r deploy.zip build
+zip -r deploy.zip public
 
 curl -H "Content-Type: application/zip" \
     -H "Authorization: Bearer $NETLIFY_TOKEN" \

@@ -7,7 +7,6 @@
     "build": "gatsby build --prefix-paths",
     "deploy": "gh-pages -d public",
     "dev": "gatsby develop",
-    "preserve": "npm run build",
     "serve": "gatsby serve",
     "start": "npm run develop",
     "format": "prettier --trailing-comma es5 --single-quote --write \"src/**/*.js\"",
@@ -25,6 +24,7 @@
   "homepage": "https://github.com/hisener/halilsener.com#readme",
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
+    "dashify": "^1.0.0",
     "dateformat": "^2.2.0",
     "gatsby": "^1.9.175",
     "gatsby-cli": "^1.1.33",
