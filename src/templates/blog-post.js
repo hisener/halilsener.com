@@ -86,7 +86,7 @@ export default function Template({ data, pathContext }) {
               </header>
               {isProduction &&
                 <ReactDisqusThread
-                  shortname="kostasbariotis"
+                  shortname="halilsener-com"
                   identifier={uuidv5(fullUrl, uuidv5.URL)}
                   title={post.frontmatter.title}
                   url={fullUrl}

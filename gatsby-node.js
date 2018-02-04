@@ -1,5 +1,5 @@
 const path = require('path');
-const dashify = require('dashify');
+const kebabCase = require('lodash.kebabcase');
 
 /**
  * This is where all starts
@@ -105,7 +105,7 @@ function createTagPages (createPage, edges) {
 
       const pageSize = 5;
       const pagesSum = Math.ceil(posts[tagName].length / pageSize);
-      const tagSlug = dashify(tagName);
+      const tagSlug = kebabCase(tagName);
 
       for (let page = 1; page <= pagesSum; page++) {
         createPage({

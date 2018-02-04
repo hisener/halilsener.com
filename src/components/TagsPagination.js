@@ -1,19 +1,19 @@
 import React from 'react';
 import GatsbyLink from 'gatsby-link';
 import PropTypes from 'prop-types';
-import dashify from 'dashify'
+import kebabCase from 'lodash.kebabcase';
 
 const Pagination = ({ tag, page, pagesSum }) =>
   <header className="header extra-pagination inner text-center">
     <nav className="pagination" role="navigation">
       {page === 2 &&
-        <GatsbyLink className="newer-posts" to={`/tag/${dashify(tag)}/`}>
+        <GatsbyLink className="newer-posts" to={`/tag/${kebabCase(tag)}/`}>
           <span aria-hidden="true">←</span> Newer Posts
         </GatsbyLink>}
       {page > 2 &&
         <GatsbyLink
           className="newer-posts"
-          to={`/tag/${dashify(tag)}/page/${page - 1}/`}
+          to={`/tag/${kebabCase(tag)}/page/${page - 1}/`}
         >
           <span aria-hidden="true">←</span> Newer Posts
         </GatsbyLink>}
@@ -21,7 +21,7 @@ const Pagination = ({ tag, page, pagesSum }) =>
       {page < pagesSum &&
         <GatsbyLink
           className="older-posts"
-          to={`/tag/${dashify(tag)}/page/${page + 1}/`}
+          to={`/tag/${kebabCase(tag)}/page/${page + 1}/`}
         >
           Older Posts <span aria-hidden="true">→</span>
         </GatsbyLink>}

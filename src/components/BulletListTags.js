@@ -1,14 +1,14 @@
 import React from 'react';
 import GatsbyLink from 'gatsby-link';
 import PropTypes from 'prop-types';
-import dashify from 'dashify'
+import kebabCase from 'lodash.kebabcase';
 
 const BulletListTags = ({ tags, draft }) =>
   <ul className="tags list-inline text-right">
     {tags &&
       tags.split(', ').map((tag, index) =>
         <li key={index}>
-          <GatsbyLink to={`/tag/${dashify(tag)}`}>
+          <GatsbyLink to={`/tag/${kebabCase(tag)}`}>
             {tag}
           </GatsbyLink>
         </li>
