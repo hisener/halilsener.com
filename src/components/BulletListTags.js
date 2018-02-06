@@ -8,7 +8,7 @@ const BulletListTags = ({ tags, draft }) =>
     {tags &&
       tags.split(', ').map((tag, index) =>
         <li key={index}>
-          <GatsbyLink to={`/tag/${kebabCase(tag)}`}>
+          <GatsbyLink to={`/tag/${kebabCase(tag)}/`}>
             {tag}
           </GatsbyLink>
         </li>

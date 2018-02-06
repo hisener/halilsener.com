@@ -7,16 +7,22 @@ import Posts from './../components/Posts';
 import MetaTags from './../components/MetaTags';
 
 export default function Index({ data }) {
-  let { edges: posts } = data.allMarkdownRemark;
-  let { description, title, siteUrl } = data.site.siteMetadata;
-  posts = posts.map(post => post.node);
+  let posts = []
+
+  if (data.allMarkdownRemark) {
+    let { edges: posts } = data.allMarkdownRemark;
+    posts = posts.map(post => post.node);
+  }
+
+  let { description, title, siteUrl, tags } = data.site.siteMetadata;
+
   return (
     <div>
       <MetaTags
         title={`My drafts - ${title}`}
         path={`/drafts`}
         siteUrl={siteUrl}
-        tags="webdev, programming, javascript"
+        tags={tags}
         description={description}
         noIndex={true}
       />
@@ -47,6 +53,8 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
+        siteUrl
+        tags
       }
     }
     allMarkdownRemark(

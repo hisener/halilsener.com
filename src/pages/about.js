@@ -6,14 +6,14 @@ import MetaTags from './../components/MetaTags';
 import AvatarImg from './../../static/images/avatar.png';
 
 export default function About({ data }) {
-  const { title, description, siteUrl } = data.site.siteMetadata;
+  const { title, description, siteUrl, tags } = data.site.siteMetadata;
   return (
     <div>
       <MetaTags
         title={`About - ${title}`}
         path={`/about`}
         siteUrl={siteUrl}
-        tags="webdev, programming, javascript"
+        tags={tags}
         description={description}
       />
       <Menu />
@@ -37,7 +37,7 @@ export default function About({ data }) {
             </ul>
             <p>
               I am trying to <i>not</i> be an {' '}
-              <a href="https://twitter.com/rakyll/status/953518942248615941" target="_blank">*end developer</a>.
+              <a href="https://twitter.com/rakyll/status/953518942248615941" target="_blank">end developer</a>.
             </p>
             <p style={{ paddingBottom:0, marginBottom: 0 }}>
               I like,
@@ -65,6 +65,7 @@ export const aboutPageQuery = graphql`
         title
         description
         siteUrl
+        tags
       }
     }
   }

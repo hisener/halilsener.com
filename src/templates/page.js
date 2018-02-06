@@ -8,7 +8,7 @@ import Menu from '../components/Menu';
 import MetaTags from '../components/MetaTags';
 
 export default function Pages({ pathContext, data }) {
-  const { title, description, siteUrl } = data.site.siteMetadata;
+  const { title, description, siteUrl, tags } = data.site.siteMetadata;
   const { posts, page, pagesSum, prevPath, nextPath } = pathContext;
   return (
     <section className="main-content">
@@ -16,7 +16,7 @@ export default function Pages({ pathContext, data }) {
         title={`Page ${page} - ${title}`}
         path={`/page/${page}`}
         siteUrl={siteUrl}
-        tags="webdev, programming, javascript"
+        tags={tags}
         description={description}
       />
       <Menu />
@@ -52,6 +52,7 @@ export const pagesQuery = graphql`
         title
         description
         siteUrl
+        tags
       }
     }
   }

@@ -50,13 +50,13 @@ class Menu extends React.Component {
                   <GatsbyLink exact activeStyle={{
                     color: '#2c3e50',
                     textDecoration: 'underline'
-                  }} to="/about">About</GatsbyLink>
+                  }} to="/about/">About</GatsbyLink>
                 </li>
                 <li>
                   <GatsbyLink exact activeStyle={{
                     color: '#2c3e50',
                     textDecoration: 'underline'
-                  }} to="/contact">Contact</GatsbyLink>
+                  }} to="/contact/">Contact</GatsbyLink>
                 </li>
               </ul>
             </div>

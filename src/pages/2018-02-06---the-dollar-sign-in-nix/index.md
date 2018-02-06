@@ -1,22 +1,22 @@
 ---
 title: "The dollar sign in *nix"
 path: "/the-dollar-sign-in-nix/"
-date: "2018-02-05T09:00:00.000Z"
+date: "2018-02-06T15:00:00.000Z"
 tags: TL;DR, Linux, Unix, Bash
-draft: true
 ---
 
 I wrote this post to use it when I forget the usage of `$` sign.
 And, I think it would be useful for beginners like me, too.
 
-Also, this is the first post of the TL;DR series. I am planning that posts
-in this series contain less writing and more coding. I hope it won't be the last.
+Also, this is the first post of the [TL;DR series][0]. I am planning to have less
+writing and more coding in posts of this series. And, I hope this one won't be
+the last.
 
 Let's get started.
 
 ## First things first: Positional Parameters
 
-* `$1`, `$2`, `$3`, ... are the [positional parameters][0] that are assigned from the shell's arguments.
+* `$1, $2 $3, ...` are the [positional parameters][1] that are assigned from the shell's arguments.
 * `$0` is the name of the shell script.
 * `$#` is the number of positional parameters.
 
@@ -96,7 +96,7 @@ sign
 
 ## More $
 
-`$?` - The exit status of the most recent command.
+`$?` - The exit status of the most recent foreground command ([pipeline][7]).
 
 ```bash
 $ non-existing-command
@@ -104,9 +104,34 @@ $ echo $?
 127 # which means "command not found"
 ```
 
-[0]: https://www.gnu.org/software/bash/manual/html_node/Positional-Parameters.html
-[1]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_05_02
-[2]: https://stackoverflow.com/questions/5163144/what-are-the-special-dollar-sign-shell-variables
-[3]: https://bash.cyberciti.biz/guide/$IFS
-[4]: https://stackoverflow.com/questions/255898/how-to-iterate-over-arguments-in-a-bash-script
-[5]: http://tldp.org/LDP/abs/html/exitcodes.html
+`$!` - The process ID of the most recent background command executed from the current shell.
+
+```bash
+$ echo "background" &
+[1] 16422
+background
+[1]+  Done  echo "background"
+$ echo $!
+16422
+```
+
+`$$` - The process ID of the current shell.
+
+```bash
+$ echo $$
+15699
+```
+
+---
+
+Your comments and suggestions are welcome. Also, you can edit this page [on GitHub][8].
+
+[0]: /tag/tl-dr/
+[1]: https://www.gnu.org/software/bash/manual/html_node/Positional-Parameters.html
+[2]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_05_02
+[3]: https://stackoverflow.com/questions/5163144/what-are-the-special-dollar-sign-shell-variables
+[4]: https://bash.cyberciti.biz/guide/$IFS
+[5]: https://stackoverflow.com/questions/255898/how-to-iterate-over-arguments-in-a-bash-script
+[6]: http://tldp.org/LDP/abs/html/exitcodes.html
+[7]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_09_02
+[8]: https://github.com/hisener/halilsener.com/blob/master/src/pages/2018-02-05---the-dollar-sign-in-nix/index.md

@@ -6,14 +6,14 @@ import MetaTags from './../components/MetaTags';
 import AvatarImg from './../../static/images/avatar.png';
 
 export default function Contact({ data }) {
-  const { title, description, siteUrl } = data.site.siteMetadata;
+  const { title, description, siteUrl, tags } = data.site.siteMetadata;
   return (
     <div>
       <MetaTags
         title={`Contact - ${title}`}
         path={`/contact`}
         siteUrl={siteUrl}
-        tags="webdev, programming, javascript"
+        tags={tags}
         description={description}
       />
       <Menu />
@@ -48,6 +48,7 @@ export const contactPageQuery = graphql`
         title
         description
         siteUrl
+        tags
       }
     }
   }

@@ -4,8 +4,8 @@ module.exports = {
     author: `Halil İbrahim Şener`,
     title: `Halil İbrahim Şener`,
     siteUrl: `https://halilsener.com`,
-    description: `I'm Halil. I'm a part-time software engineer at OpsGenie, and also a computer science student that will graduate in June.`,
-    tags: "software development"
+    description: `I'm Halil. I'm a part-time software engineer at OpsGenie, and also a computer science student who will graduate in June.`,
+    tags: "software development, programming"
   },
   plugins: [
     'gatsby-plugin-catch-links',

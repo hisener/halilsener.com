@@ -3,6 +3,7 @@ title: "First Post"
 path: "/first-post/"
 date: "2018-02-04T09:00:00.000Z"
 tags: Blog
+draft: false
 ---
 
 Hello, world!
