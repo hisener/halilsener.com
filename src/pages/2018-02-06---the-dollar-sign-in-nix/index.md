@@ -93,7 +93,6 @@ dollar
 sign
 ```
 
-
 ## More $
 
 `$?` - The exit status of the most recent foreground command ([pipeline][7]).
@@ -122,7 +121,7 @@ $ echo $$
 15699
 ```
 
----
+You can find all examples in this post on [GitHub Gist][9].
 
 Your comments and suggestions are welcome. Also, you can edit this page [on GitHub][8].
 
@@ -134,4 +133,5 @@ Your comments and suggestions are welcome. Also, you can edit this page [on GitH
 [5]: https://stackoverflow.com/questions/255898/how-to-iterate-over-arguments-in-a-bash-script
 [6]: http://tldp.org/LDP/abs/html/exitcodes.html
 [7]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_09_02
-[8]: https://github.com/hisener/halilsener.com/blob/master/src/pages/2018-02-05---the-dollar-sign-in-nix/index.md
+[8]: https://github.com/hisener/halilsener.com/blob/master/src/pages/2018-02-06---the-dollar-sign-in-nix/index.md
+[9]: https://gist.github.com/hisener/458f6d60d3fb334127f80a1bd89d671c

@@ -109,7 +109,7 @@ function createTagPages (createPage, edges) {
 
       for (let page = 1; page <= pagesSum; page++) {
         createPage({
-          path: page === 1 ? `/tag/${tagSlug}` : `/tag/${tagSlug}/page/${page}`,
+          path: page === 1 ? `/tag/${tagSlug}/` : `/tag/${tagSlug}/page/${page}/`,
           component: tagTemplate,
           context: {
             posts: paginate(posts[tagName], pageSize, page),
@@ -133,7 +133,7 @@ function createPagination (createPage, edges, pathPrefix) {
 
   for(let page = 1; page <= pagesSum; page++) {
     createPage({
-      path: `${pathPrefix}/${page}`,
+      path: `${pathPrefix}/${page}/`,
       component: pageTemplate,
       context: {
         posts: paginate(edges, pageSize, page).map(({node}) => node),
