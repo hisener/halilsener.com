@@ -46,18 +46,18 @@ module.exports = {
         trackingId: 'UA-91454609-1',
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: "Halil İbrahim Şener",
-        short_name: "hisener",
-        start_url: "/",
-        theme_color: "#2c3e50",
-        display: "minimal-ui",
-        icons: [
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: "Halil İbrahim Şener",
+    //     short_name: "hisener",
+    //     start_url: "/",
+    //     theme_color: "#2c3e50",
+    //     display: "minimal-ui",
+    //     icons: [
+    //     ],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-sitemap`
     },
