@@ -4,7 +4,7 @@ module.exports = {
     author: `Halil İbrahim Şener`,
     title: `Halil İbrahim Şener`,
     siteUrl: `https://halilsener.com`,
-    description: `I'm Halil. I'm a part-time software engineer at OpsGenie, and also a computer science student who will graduate in June.`,
+    description: `I'm Halil. I'm a software engineer, currently working at Picnic Technologies, Amsterdam, NL.`,
     tags: "software development, programming"
   },
   plugins: [

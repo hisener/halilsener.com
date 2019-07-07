@@ -18,7 +18,7 @@ export default function About({ data }) {
       />
       <Menu />
       <section className="blog container about">
-        <div className="medium-8 medium-offset-2">
+        <div className="medium-8 medium-offset-2 large-10 large-offset-1">
           <header className="header">
             <div className="row text-center">
               <img
@@ -32,23 +32,20 @@ export default function About({ data }) {
           <Separator />
           <main role="main">
             <ul>
-              <li>Computer Science student at <a href="http://www.cs.hacettepe.edu.tr/" target="_blank">Hacettepe</a> [June 2018]</li>
-              <li>Part-time Software Engineer at <a href="https://www.opsgenie.com/" target="_blank">OpsGenie</a> [since Aug 2017]</li>
+              <li>Software Engineer at <a href="https://picnic.app/" target="_blank">Picnic Technologies</a> [Oct 2018 - Present]</li>
+              <li>Software Engineer at <a href="https://www.opsgenie.com/" target="_blank">OpsGenie</a> [Jun 2017 - Sep 2018]</li>
+              <li>Part-time Software Engineer at <a href="https://www.opsgenie.com/" target="_blank">OpsGenie</a> [Aug 2017 - May 2018]</li>
+              <li>Bachelor of Science in Computer Science, Hacettepe University [2013 - 2018]</li>
             </ul>
-            <p>
-              I am trying to <i>not</i> be an {' '}
-              <a href="https://twitter.com/rakyll/status/953518942248615941" target="_blank">end developer</a>.
-            </p>
             <p style={{ paddingBottom:0, marginBottom: 0 }}>
               I like,
             </p>
             <ul>
               <li>Java</li>
-              <li>Node.js, Express.js</li>
-              <li>MongoDB, Mongoose</li>
-              <li>React.js</li>
+              <li>Spring</li>
+              <li>Reactive Programming, Project Reactor</li>
               <li>Git, GitHub</li>
-              <li>Bash</li>
+              <li>Docker, Bash</li>
               <li>AWS, Heroku</li>
             </ul>
           </main>
